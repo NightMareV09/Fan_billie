@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fan Zone - Billie Eilish Fan Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bio.html">Biography</a></li>
+        <li><a href="music.html">Discography</a></li>
+        <li><a href="fans.html">Fan Zone</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Fan Art Upload Section -->
+    <section class="fan-art-upload" id="upload-section">
+      <h1>Fan Zone</h1>
+      <p>Share your love for Billie by uploading your fan art below!</p>
+      <form id="upload-form" action="upload.php" method="POST" enctype="multipart/form-data">
+        <input id="file-input" type="file" name="fan-art" required>
+        <input id="caption-input" type="text" name="caption" placeholder="Enter a caption">
+        <button type="submit">Upload</button>
+      </form>
+    </section>
+
+    <!-- Fan Art Gallery -->
+    <section class="fan-art-gallery" id="gallery-section">
+      <h2>Fan Art Gallery</h2>
+      <div class="gallery-grid" id="gallery">
+        <!-- Dynamically populated fan art will appear here -->
+      </div>
+    </section>
+
+    <!-- Comments Section -->
+    <section class="comments" id="comments-section">
+      <h2>Comments</h2>
+      <form id="comment-form">
+        <textarea id="comment-input" name="comment" placeholder="Leave your thoughts"></textarea>
+        <button type="submit">Post Comment</button>
+      </form>
+      <div id="comment-list">
+        <p><strong>@fan123:</strong> Billie is the best!</p>
+        <p><strong>@artlover:</strong> These fan arts are incredible!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Billie Eilish Fan Page. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
